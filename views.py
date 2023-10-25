@@ -202,6 +202,14 @@ class DubaiActivityDetail(generics.RetrieveAPIView):
     queryset = DubaiActivity.objects.all()
     serializer_class = DubaiActivitySerializer
 
+class CityTourList(generics.ListAPIView):
+    queryset = CityTour.objects.all()
+    serializer_class = CityTourSerializer
+
+class CityTourDetail(generics.RetrieveAPIView):
+    queryset = CityTour.objects.all()
+    serializer_class = CityTourSerializer
+
 class OfferListView(generics.ListAPIView):
     queryset = Offer.objects.all()
     serializer_class = OfferSerializer
